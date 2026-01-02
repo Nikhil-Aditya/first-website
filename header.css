@@ -1,0 +1,251 @@
+
+.headder{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(213, 210, 210, 0.66);
+    z-index: 100;
+}
+.left-section{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.menu{
+    height: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+    
+}
+
+.logo{
+    height: 20px;
+}
+.middle-section{
+    display: flex;
+    flex: 1px;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+}
+.right-section{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+}
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(192,192,192);
+    margin-left: -1px;
+    margin-right: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+.search-button .tooltip{
+    position: absolute;
+    font-family: Roboto,Arial;
+    background-color: grey;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+.search-icon{
+    height:25px;
+    margin-top: 4px;
+}
+.audio-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(240,240,240);
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.audio-button .tooltip{
+    position: absolute;
+    font-family: Roboto,Arial;
+    background-color: grey;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.audio-button:hover .tooltip{
+    opacity: 1;
+}
+.audio-icon{
+    height: 24px;
+    margin-bottom: -2px;
+    
+}
+.searchbar{
+    flex:1;
+    height: 36.5px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
+}
+.searchbar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16px;
+}
+.uplod-button{
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uplod-icon{
+    height: 24px;
+
+}
+.apps-button{
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apps-icon{
+    height: 24px;
+}
+.notification-button{
+    height: 40px;
+    width: 40px;
+    border-style:none ;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.notification-icon{
+    height: 24px;
+}
+
+.account-icon{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.notification-div{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(212, 0, 0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    width: 20px;
+    border-radius: 10px;
+    padding-left: 3px;
+    
+}
+.notification-button:hover{
+    background-color: rgb(215, 213, 213);
+}
+.uplod-button:hover{
+    background-color: rgb(215, 213, 213);
+}
+.apps-button:hover{
+   background-color: rgb(215, 213, 213);
+}
+.search-button:hover{
+    background-color: rgb(215, 213, 213);
+}
+.audio-button:hover{
+    background-color: rgb(215, 213, 213);
+}
+
+.menu:hover{
+    background-color: rgb(215, 213, 213);
+}
+.uplod-button .tooltip,.apps-button .tooltip,.notification-button .tooltip{
+    position: absolute;
+    font-family: Roboto,Arial;
+    background-color: grey;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.2s;
+    pointer-events: none;
+}
+.uplod-button:hover .tooltip,.apps-button:hover .tooltip,.notification-button:hover .tooltip{
+    opacity: 1;
+}
+
+
